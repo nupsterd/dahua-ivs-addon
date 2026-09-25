@@ -1,0 +1,10 @@
+[project]
+name = "dahua-ivs-addon"
+version = "0.1.0a0"
+description = "Dahua IVS (tripwire) event consumer add-on for Home Assistant (Porteria Virtual)"
+requires-python = ">=3.12"
+dependencies = ["requests>=2.28"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

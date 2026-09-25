@@ -1,0 +1,1450 @@
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10013,
+   "GroupID" : 12,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2384, 3496, 3712, 8184 ],
+      "Center" : [ 3048, 5840 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 73,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524752000.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151333,
+   "UTCMS" : 420
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1101
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10013,
+   "GroupID" : 12,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2384, 3496, 3712, 8184 ],
+      "Center" : [ 3048, 5840 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 73,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524752000.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151333,
+   "UTCMS" : 420
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10017,
+   "GroupID" : 16,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2352, 3120, 3584, 8176 ],
+      "Center" : [ 2968, 5648 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 87,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524897100.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151478,
+   "UTCMS" : 524
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1101
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10017,
+   "GroupID" : 16,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2352, 3120, 3584, 8176 ],
+      "Center" : [ 2968, 5648 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 87,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524897100.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151478,
+   "UTCMS" : 524
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10021,
+   "GroupID" : 20,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3168, 3368, 4464, 8184 ],
+      "Center" : [ 3816, 5776 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 92,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524922090.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151503,
+   "UTCMS" : 511
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1101
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10021,
+   "GroupID" : 20,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3168, 3368, 4464, 8184 ],
+      "Center" : [ 3816, 5776 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 92,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43524922090.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151503,
+   "UTCMS" : 511
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10025,
+   "GroupID" : 24,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3448, 3832, 4536, 7768 ],
+      "Center" : [ 3992, 5800 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 99,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525158890.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151740,
+   "UTCMS" : 310
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10029,
+   "GroupID" : 28,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2928, 3184, 4096, 8048 ],
+      "Center" : [ 3512, 5616 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 101,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525160730.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151742,
+   "UTCMS" : 152
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1101
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10025,
+   "GroupID" : 24,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3448, 3832, 4536, 7768 ],
+      "Center" : [ 3992, 5800 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 99,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525158890.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151740,
+   "UTCMS" : 310
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10033,
+   "GroupID" : 32,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2584, 4920, 4392, 8168 ],
+      "Center" : [ 3488, 6544 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 103,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525256480.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151837,
+   "UTCMS" : 901
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10033,
+   "GroupID" : 32,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2584, 4920, 4392, 8168 ],
+      "Center" : [ 3488, 6544 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 103,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525256480.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151837,
+   "UTCMS" : 901
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10037,
+   "GroupID" : 36,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2112, 3760, 3312, 7840 ],
+      "Center" : [ 2712, 5800 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 122,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525306570.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151888,
+   "UTCMS" : 264
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10037,
+   "GroupID" : 36,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2112, 3760, 3312, 7840 ],
+      "Center" : [ 2712, 5800 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 122,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525306570.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151888,
+   "UTCMS" : 264
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10041,
+   "GroupID" : 40,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3480, 2920, 4376, 7096 ],
+      "Center" : [ 3928, 5008 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 126,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525369370.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151951,
+   "UTCMS" : 62
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1101
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10041,
+   "GroupID" : 40,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3480, 2920, 4376, 7096 ],
+      "Center" : [ 3928, 5008 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 126,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525369370.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790151951,
+   "UTCMS" : 62
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10045,
+   "GroupID" : 44,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2512, 4640, 4192, 8176 ],
+      "Center" : [ 3352, 6408 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 130,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525438120.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152019,
+   "UTCMS" : 809
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10045,
+   "GroupID" : 44,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2512, 4640, 4192, 8176 ],
+      "Center" : [ 3352, 6408 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 130,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525438120.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152019,
+   "UTCMS" : 809
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10049,
+   "GroupID" : 48,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3360, 3512, 4496, 7864 ],
+      "Center" : [ 3928, 5688 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 134,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525580210.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152161,
+   "UTCMS" : 895
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10049,
+   "GroupID" : 48,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 3360, 3512, 4496, 7864 ],
+      "Center" : [ 3928, 5688 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 134,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525580210.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152161,
+   "UTCMS" : 895
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10053,
+   "GroupID" : 52,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2920, 3872, 4344, 8160 ],
+      "Center" : [ 3632, 6016 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 143,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525621030.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152202,
+   "UTCMS" : 715
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "RightToLeft",
+   "EventID" : 10053,
+   "GroupID" : 52,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2920, 3872, 4344, 8160 ],
+      "Center" : [ 3632, 6016 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 143,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525621030.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152202,
+   "UTCMS" : 715
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1103
+
+Code=CrossLineDetection;action=Start;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10057,
+   "GroupID" : 56,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2480, 4376, 4224, 8184 ],
+      "Center" : [ 3352, 6280 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 164,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525968480.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152550,
+   "UTCMS" : 420
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 1102
+
+Code=CrossLineDetection;action=Stop;index=0;data={
+   "Class" : "Normal",
+   "CountInGroup" : 1,
+   "DetectLine" : [
+      [ 3185, 5409 ],
+      [ 4714, 8128 ]
+   ],
+   "Direction" : "LeftToRight",
+   "EventID" : 10057,
+   "GroupID" : 56,
+   "Name" : "salida 1 ",
+   "Object" : {
+      "Action" : "Appear",
+      "BelongID" : 0,
+      "BoundingBox" : [ 2480, 4376, 4224, 8184 ],
+      "Center" : [ 3352, 6280 ],
+      "Confidence" : 0,
+      "FusionInfo" : {
+         "BelongID" : 0,
+         "CartPosX" : 0.0,
+         "CartPosY" : 0.0,
+         "GpsPosValid" : 0,
+         "GpsPostion" : {
+            "Latitude" : 0.0,
+            "Longitude" : 0.0
+         },
+         "ObjectSource" : 0,
+         "RadarCoorXyValid" : 0,
+         "Speed" : 0.0,
+         "SpeedValid" : 0
+      },
+      "LowerBodyColor" : [ 0, 0, 0, 0 ],
+      "MainColor" : [ 0, 0, 0, 0 ],
+      "ObjectID" : 164,
+      "ObjectType" : "Human",
+      "RelativeID" : 0,
+      "Speed" : 0,
+      "humanTripLineDirection" : 0
+   },
+   "PTS" : 43525968480.0,
+   "RuleID" : 4,
+   "Track" : [],
+   "UTC" : 1790152550,
+   "UTCMS" : 420
+}
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+
+--myboundary
+Content-Type: text/plain
+Content-Length: 9
+
+Heartbeat
+

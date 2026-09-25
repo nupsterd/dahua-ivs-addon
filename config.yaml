@@ -1,0 +1,56 @@
+name: "Dahua IVS (Portería Virtual)"
+version: "0.1.0-alpha"
+slug: dahua_ivs
+description: >
+  Consume los eventos IVS (tripwire, CrossLineDetection) de una cámara Dahua
+  WizMind por el stream eventManager.cgi?action=attach, audita cada cruce en
+  JSON Lines local y, si hay backend configurado, lo reenvía con una cola
+  persistente. Solo mensajero: la correlación la hace el backend.
+
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+startup: services
+boot: auto
+init: false
+
+options:
+  camera_host: ""
+  camera_user: "admin"
+  camera_password: ""
+  camera_timezone: "America/Bogota"
+  camera_heartbeat_seconds: 30
+  stream_idle_timeout: 75
+  heartbeat_interval_minutes: 15
+  backend_url: ""
+  backend_secret: ""
+  backend_timeout_seconds: 5
+  outbox_max_records: 100000
+  outbox_max_age_days: 7
+  audit_dir: "/config"
+  audit_retention_days: 30
+  log_level: "info"
+
+schema:
+  camera_host: str
+  camera_user: str
+  camera_password: password
+  camera_timezone: str
+  camera_heartbeat_seconds: int(10,120)
+  stream_idle_timeout: int(20,300)
+  heartbeat_interval_minutes: int(1,60)
+  backend_url: "str?"
+  backend_secret: "password?"
+  backend_timeout_seconds: int(1,30)
+  outbox_max_records: int(1000,1000000)
+  outbox_max_age_days: int(1,30)
+  audit_dir: str
+  audit_retention_days: int(1,365)
+  log_level: list(debug|info|warning)
+
+map:
+  - addon_config:rw    # /config -> /addon_configs/<slug>/ (auditoría visible desde el add-on SSH)
