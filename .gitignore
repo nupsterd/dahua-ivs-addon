@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Datos locales del add-on (auditoría, cola)
+*.log
+*.jsonl
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Editores / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Build / tests
+.build/
+.pytest_cache/
+.coverage
+coverage.xml
