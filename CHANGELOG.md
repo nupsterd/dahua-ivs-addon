@@ -3,6 +3,16 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 versionado siguiendo [SemVer](https://semver.org/lang/es/).
 
+## [0.1.1-alpha] - sin publicar
+
+### Fixed
+- Resumen horario con `pendientes_cola=1` fijo desde que se encendió el fan-out (#28).
+  El latido propio (cada 15 min) y el resumen (cada 60 min) vencen en la misma vuelta,
+  y el resumen contaba la cola justo después de encolar el latido, antes de que el hilo
+  de envío lo mandara. Ahora la cola se cuenta UNA vez por vuelta, antes de encolar el
+  latido, y ese mismo número va al resumen y al `outbox_pending` del latido. Un registro
+  que no drena sigue contando.
+
 ## [0.1.0-alpha] - sin publicar
 
 Primera versión (B5.2). Pendiente del smoke en hardware real antes del tag.

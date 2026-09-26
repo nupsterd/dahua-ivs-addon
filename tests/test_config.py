@@ -38,7 +38,7 @@ def test_config_yaml_metadatos():
     y = _yaml()
     assert y["slug"] == "dahua_ivs"
     assert y["name"] == "Dahua IVS (Portería Virtual)"
-    assert y["version"] == ADDON_VERSION == "0.1.0-alpha"
+    assert y["version"] == ADDON_VERSION == "0.1.1-alpha"
     assert y["boot"] == "auto" and y["startup"] == "services" and y["init"] is False
     assert "image" not in y  # build local en la Pi
     assert y["map"] == ["addon_config:rw"]

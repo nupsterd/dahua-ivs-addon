@@ -1,5 +1,5 @@
 name: "Dahua IVS (Portería Virtual)"
-version: "0.1.0-alpha"
+version: "0.1.1-alpha"
 slug: dahua_ivs
 description: >
   Consume los eventos IVS (tripwire, CrossLineDetection) de una cámara Dahua
