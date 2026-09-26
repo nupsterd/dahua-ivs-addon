@@ -7,5 +7,5 @@ una cola SQLite persistente que lo reenvía por POST. No correlaciona nada: eso
 lo hace el backend (B5.3).
 """
 
-ADDON_VERSION = "0.1.0-alpha"
+ADDON_VERSION = "0.1.1-alpha"
 DEVICE_KIND = "camera_tripwire"

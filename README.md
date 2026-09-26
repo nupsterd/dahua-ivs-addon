@@ -115,7 +115,7 @@ Ejemplo real (captura del 23-sep; serial e IP reemplazados por valores de ejempl
   "object_type": "Human",
   "bbox": [2384, 3496, 3712, 8184],
   "center": [3048, 5840],
-  "addon_version": "0.1.0-alpha"
+  "addon_version": "0.1.1-alpha"
 }
 ```
 
@@ -156,7 +156,7 @@ queda pendiente y sale en cuanto vuelva a estarlo.
   "camera_heartbeats_since_last": 30,
   "reconnects_since_last": 0,
   "outbox_pending": 0,
-  "addon_version": "0.1.0-alpha"
+  "addon_version": "0.1.1-alpha"
 }
 ```
 

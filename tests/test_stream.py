@@ -2,13 +2,15 @@ from __future__ import annotations
 
 import json
 import logging
+import threading
+import time
 from pathlib import Path
 
 import pytest
 import requests
 
 from dahua_ivs.audit import AuditWriter
-from dahua_ivs.outbox import Outbox
+from dahua_ivs.outbox import Outbox, OutboxSender
 from dahua_ivs.stream import AUTH_WAIT_SECONDS, Backoff, StreamRunner, Ticker, iter_available, parse_serial
 from tests.conftest import BOGOTA, FakeClock, make_config
 
@@ -251,6 +253,126 @@ def test_resumen_horario_info(tmp_path, caplog):
         t.tick()
     assert any("Resumen última hora" in rec.getMessage() and "latidos_camara=1" in rec.getMessage()
                for rec in caplog.records)
+
+
+def _resumenes(caplog) -> list[str]:
+    return [rec.getMessage() for rec in caplog.records if "Resumen última hora" in rec.getMessage()]
+
+
+class _PostBloqueable:
+    """``post`` del sender: responde ``received`` al instante, salvo que se cierre la
+    compuerta; entonces el POST queda EN VUELO hasta que el test la abra."""
+
+    def __init__(self) -> None:
+        self.abierta = threading.Event()
+        self.abierta.set()
+        self.en_vuelo = threading.Event()
+
+    def __call__(self, _url, _data, _headers, _timeout):
+        if not self.abierta.is_set():
+            self.en_vuelo.set()
+            self.abierta.wait(10)
+
+        class _Resp:
+            status_code = 200
+            text = '{"status": "received"}'
+
+        return _Resp()
+
+
+def _esperar(cond, timeout: float = 5.0) -> None:
+    fin = time.monotonic() + timeout
+    while not cond():
+        assert time.monotonic() < fin, "timeout esperando al hilo de envío"
+        time.sleep(0.01)
+
+
+def test_resumen_no_cuenta_el_latido_en_vuelo(tmp_path, caplog):
+    """#28: el latido de las :00 y el resumen vencen en la misma vuelta. Con el latido
+    encolado y su POST en vuelo, el resumen tiene que decir pendientes_cola=0."""
+    clock = FakeClock()
+    outbox = Outbox(tmp_path / "outbox.sqlite", 1000, 7, clock=clock.time)
+    r = make_runner(tmp_path, FakeCamera(), clock, outbox=outbox, heartbeat_interval_minutes=15)
+    r.serial = "S"
+    post = _PostBloqueable()
+    r.sender = OutboxSender(outbox, "http://backend/api", "tok", 5, post=post)
+    stop = threading.Event()
+    hilo = threading.Thread(target=r.sender.run, args=(stop,), daemon=True)
+    hilo.start()
+    t = Ticker(r, monotonic=clock.monotonic, now=clock.now)
+    try:
+        for _ in range(3):  # latidos de :15, :30 y :45, que drenan normalmente
+            clock.advance(15 * 60)
+            r.handle_part_body(b"Heartbeat")
+            t.tick()
+            _esperar(lambda: outbox.pending_count() == 0)
+
+        post.abierta.clear()  # el próximo POST queda en vuelo
+        clock.advance(15 * 60)
+        r.handle_part_body(b"Heartbeat")
+        with caplog.at_level(logging.INFO, logger="dahua_ivs.stream"):
+            t.tick()  # latido de :00 + resumen en la MISMA vuelta
+        post.en_vuelo.wait(5)
+        assert post.en_vuelo.is_set() and outbox.pending_count() == 1  # el latido, en vuelo
+        assert _resumenes(caplog) == [
+            "Resumen última hora: cruces=0 latidos_camara=4 reconexiones=0 pendientes_cola=0"
+        ]
+    finally:
+        post.abierta.set()
+        stop.set()
+        r.sender.notify()
+        hilo.join(5)
+    _esperar(lambda: outbox.pending_count() == 0)
+    latidos = [json.loads(x) for x in audit_lines(tmp_path)]
+    assert [hb["outbox_pending"] for hb in latidos] == [0, 0, 0, 0]
+
+
+def test_resumen_cuenta_un_registro_atascado(tmp_path, caplog):
+    """Un registro que NO drena (backend caído o pausa por configuración: nadie lo
+    borra) sigue en el resumen, junto con lo que quedó detrás de él en la cola FIFO."""
+    clock = FakeClock()
+    outbox = Outbox(tmp_path / "outbox.sqlite", 1000, 7, clock=clock.time)
+    r = make_runner(tmp_path, FakeCamera(), clock, outbox=outbox, heartbeat_interval_minutes=15)
+    r.serial = "S"
+    t = Ticker(r, monotonic=clock.monotonic, now=clock.now)
+    r.emit('{"kind": "crossing", "atascado": true}')  # la cabeza que no drena
+    for _ in range(4):
+        clock.advance(15 * 60)
+        r.handle_part_body(b"Heartbeat")
+        with caplog.at_level(logging.INFO, logger="dahua_ivs.stream"):
+            t.tick()
+    # En la foto de las :00: el cruce atascado + los latidos de :15, :30 y :45 (no el de :00).
+    assert _resumenes(caplog) == [
+        "Resumen última hora: cruces=0 latidos_camara=4 reconexiones=0 pendientes_cola=4"
+    ]
+    assert outbox.pending_count() == 5
+    latidos = [json.loads(x) for x in audit_lines(tmp_path) if '"heartbeat"' in x]
+    assert [hb["outbox_pending"] for hb in latidos] == [1, 2, 3, 4]
+
+
+def test_resumen_solo_con_atascado_de_una_hora_atras(tmp_path, caplog):
+    """Mínimo del requisito duro: un único registro atascado ⇒ pendientes_cola >= 1."""
+    clock = FakeClock()
+    outbox = Outbox(tmp_path / "outbox.sqlite", 1000, 7, clock=clock.time)
+    r = make_runner(tmp_path, FakeCamera(), clock, outbox=outbox)
+    t = Ticker(r, monotonic=clock.monotonic, now=clock.now)
+    r.emit('{"kind": "crossing", "atascado": true}')
+    clock.advance(3600)  # stream no sano: no hay latidos, solo el resumen
+    with caplog.at_level(logging.INFO, logger="dahua_ivs.stream"):
+        t.tick()
+    assert _resumenes(caplog) == [
+        "Resumen última hora: cruces=0 latidos_camara=0 reconexiones=0 pendientes_cola=1"
+    ]
+
+
+def test_tick_sin_nada_vencido_no_lee_la_cola(tmp_path):
+    clock = FakeClock()
+    outbox = Outbox(tmp_path / "outbox.sqlite", 1000, 7, clock=clock.time)
+    r = make_runner(tmp_path, FakeCamera(), clock, outbox=outbox)
+    t = Ticker(r, monotonic=clock.monotonic, now=clock.now)
+    outbox.close()  # si tick() tocara la cola, fallaría
+    clock.advance(60)
+    t.tick()
 
 
 def test_cruce_no_se_imprime_a_nivel_info(tmp_path, capture_same_second, caplog):

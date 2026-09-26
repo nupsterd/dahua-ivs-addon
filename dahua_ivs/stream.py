@@ -321,7 +321,17 @@ class Ticker:
 
     def tick(self) -> None:
         now = self._monotonic()
-        if now >= self._next_heartbeat:
+        heartbeat_due = now >= self._next_heartbeat
+        summary_due = now >= self._next_summary
+        if not (heartbeat_due or summary_due):
+            return
+        # Foto de la cola ANTES de encolar el latido de esta vuelta (#28). El latido y el
+        # resumen vencen en la misma vuelta (3600 s = 4 x 900 s y se reprograman desde el
+        # mismo ``now``): contar después del ``emit`` veía siempre el latido recién
+        # encolado, que el hilo de envío todavía no llegó a mandar. Un registro que de
+        # verdad no drena sigue en la cola en cualquier momento, así que sigue contando.
+        pending = self._pending()
+        if heartbeat_due:
             if self.runner.stream_healthy():
                 snap = self._snapshot()
                 delta = tuple(a - b for a, b in zip(snap, self._hb_base, strict=True))
@@ -332,7 +342,7 @@ class Ticker:
                     crossings_since_last=delta[0],
                     camera_heartbeats_since_last=delta[1],
                     reconnects_since_last=delta[2],
-                    outbox_pending=self._pending(),
+                    outbox_pending=pending,
                 )
                 self.runner.emit(serialize(record))
                 self._hb_base = snap
@@ -341,10 +351,9 @@ class Ticker:
             else:
                 # Queda pendiente: sale en cuanto el stream vuelva a estar sano.
                 log.debug("Latido propio pendiente: stream no sano.")
-        if now >= self._next_summary:
+        if summary_due:
             snap = self._snapshot()
             d = tuple(a - b for a, b in zip(snap, self._sum_base, strict=True))
-            pending = self._pending()
             log.info(
                 "Resumen última hora: cruces=%d latidos_camara=%d reconexiones=%d pendientes_cola=%s",
                 d[0],
