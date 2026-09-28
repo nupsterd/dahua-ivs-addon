@@ -15,7 +15,7 @@ versionado siguiendo [SemVer](https://semver.org/lang/es/).
 
 ## [0.1.0-alpha] - 2026-09-25
 
-Primera versión (B5.2). Pendiente del smoke en hardware real antes del tag.
+Primera versión (B5.2). Verificada en hardware real (Pi de la oficina) antes del tag.
 
 ### Added
 - Consumidor del stream `eventManager.cgi?action=attach` de cámaras Dahua WizMind
