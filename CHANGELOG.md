@@ -3,7 +3,7 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 versionado siguiendo [SemVer](https://semver.org/lang/es/).
 
-## [0.1.1-alpha] - sin publicar
+## [0.1.1-alpha] - 2026-09-26
 
 ### Fixed
 - Resumen horario con `pendientes_cola=1` fijo desde que se encendió el fan-out (#28).
@@ -13,9 +13,9 @@ versionado siguiendo [SemVer](https://semver.org/lang/es/).
   latido, y ese mismo número va al resumen y al `outbox_pending` del latido. Un registro
   que no drena sigue contando.
 
-## [0.1.0-alpha] - sin publicar
+## [0.1.0-alpha] - 2026-09-25
 
-Primera versión (B5.2). Pendiente del smoke en hardware real antes del tag.
+Primera versión (B5.2). Verificada en hardware real (Pi de la oficina) antes del tag.
 
 ### Added
 - Consumidor del stream `eventManager.cgi?action=attach` de cámaras Dahua WizMind
